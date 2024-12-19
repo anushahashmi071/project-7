@@ -1,0 +1,54 @@
+@include tablet {
+    h1 {
+        font-size: $textSize * 3;
+    }
+}
+
+@include tablet {
+    h2 {
+        font-size: $textSize * 2;
+
+        span {
+            font-size: $textSize * 1.2;
+        }
+    }
+}
+
+@include tablet {
+    .sec-4-content {
+        height: 500px;
+
+        .sec-4-wraper {
+            max-width: 100%;
+
+            h3 {
+                font-size: $textSize * 2.3;
+            }
+
+            p {
+                max-width: 60%;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .sec-footer {
+
+        h6 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        .social-icons {
+            justify-content: center;
+        }
+
+        form {
+            justify-content: center;
+        }
+    }
+}

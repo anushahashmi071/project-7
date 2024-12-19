@@ -1,0 +1,228 @@
+body {
+    font-family: $myFont;
+    color: $primaryColor;
+    font-weight: $textWeight;
+}
+
+.section {
+    padding: 30px 0;
+}
+
+.site-btn {
+    background-color: $secondaryColor;
+    transition: $textTransition;
+    padding: 5px 15px;
+    @include border(1px, solid, $secondaryColor);
+    @include bd-radius(30px, 30px, 30px, 30px);
+
+    &:hover {
+        background-color: $colorWhite;
+        @include border(1px, solid, $secondaryColor);
+    }
+
+    a {
+        color: $colorWhite;
+        text-decoration: $textDecor;
+        text-transform: $textTrans;
+        display: block;
+
+        &:hover {
+            color: $secondaryColor;
+        }
+    }
+}
+
+h1 {
+    color: $secondaryColor;
+    font-weight: $textWeight * 2;
+    text-transform: capitalize;
+    font-size: $textSize * 4;
+
+    span {
+        font-weight: $textWeight + 300;
+        color: $primaryColor;
+    }
+}
+
+h2 {
+    color: $secondaryColor;
+    font-weight: $textWeight * 2;
+    text-transform: $textTrans;
+    font-size: $textSize * 3;
+    text-align: center;
+
+    span {
+        font-size: $textSize * 2;
+        font-weight: $textWeight + 300;
+        color: $primaryColor;
+    }
+}
+
+h4 {
+    font-weight: $textWeight + 200;
+    text-transform: capitalize;
+    font-size: $textSize + 8;
+}
+
+.hero-img {
+    position: relative;
+
+    .hero-img-1 {
+        width: 100%;
+        padding-left: 10%;
+        @include bd-radius(50%, 10%, 10%, 50%);
+    }
+
+    .hero-img-2 {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 250px;
+    }
+}
+
+.sec-1 {
+    background-color: $secondaryColor;
+    color: $colorWhite;
+    text-align: center;
+
+    h5 {
+        font-size: $textSize * 3 / 2;
+        text-transform: $textTrans;
+        font-weight: $textWeight - 100;
+        margin: 10px;
+    }
+}
+.sec-2{
+    overflow: hidden;
+}
+.sec-slider {
+    transform: translate( 120px ,0px);
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .slider-1 {
+        position: relative;
+        padding: 10px 30px;
+        box-shadow: 1px 1px 10px #cccccc66;
+        margin: 10px 0;
+        @include bd-radius(8px, 8px, 8px, 8px);
+
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 150px;
+        }
+    }
+
+    .slick-slide {
+        margin: 0 10px;
+    }
+
+    .slick-list {
+        margin: 0 -10px;
+        margin-left: 10%;
+    }
+}
+
+.sec-3 {
+    .sec-3-content {
+        text-align: center;
+        padding: 10px 20px;
+        box-shadow: 1px 1px 10px #cccccc66;
+        @include bd-radius(8px, 8px, 8px, 8px);
+
+        img {
+            padding: 10px;
+            max-width: 40px;
+            max-height: 40px;
+            background-color: $secondaryColor;
+            @include bd-radius(10px, 10px, 10px, 10px);
+            margin: 15px;
+        }
+
+        p {
+            font-size: $textSize - 1;
+        }
+    }
+}
+
+.sec-4-content {
+    background-image: url(../images/sec-4-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    padding: 30px;
+    color: $colorWhite;
+    @include bd-radius(20px, 20px, 20px, 20px);
+
+    .sec-4-wraper {
+        max-width: 60%;
+
+        h3 {
+            text-transform: capitalize;
+            font-size: $textSize * 3;
+        }
+
+        p {
+            max-width: 55%;
+        }
+    }
+}
+
+.sec-5 {
+    .tabs {
+        color: $primaryColor;
+        cursor: pointer;
+        @include border(2px, solid, $colorWhite);
+    }
+
+    p {
+        font-size: $textSize - 1;
+    }
+
+    .tabs.active {
+        background-color: $colorWhite;
+        @include border(2px, solid, #0178E5);
+        @include bd-radius(20px, 20px, 20px, 20px);
+
+        h4 {
+            color: #0178E5;
+        }
+
+        p {
+            color: $primaryColor;
+        }
+    }
+
+    .sec-5-img {
+        width: 100%;
+        @include bd-radius(50%, 10%, 10%, 50%);
+    }
+}
+
+.sec-6 {
+    h2 {
+        color: $primaryColor;
+    }
+
+    .sec-6-img {
+        width: 100%;
+        max-height: 200px;
+        @include bd-radius(20px, 20px, 0, 0)
+    }
+
+    .sec-6-wraper {
+        padding: 20px;
+        box-shadow: 1px 1px 10px #cccccc66;
+        @include bd-radius(20px, 20px, 20px, 20px);
+
+        p {
+            font-size: $textSize - 1;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+$myFont: "Open Sans", serif;
+$textSize: 14px;
+$textWeight: 400;
+$primaryColor: #212D3B;
+$secondaryColor: #152996;
+$colorWhite: #fff;
+$textTransition: all ease-in-out 0.3s;
+$textDecor: none;
+$textTrans: uppercase;
+
+// mixin
+@mixin bd-radius($top , $right , $bottom , $left){
+    -webkit-border-radius: $top  $right  $bottom  $left;
+    -moz-border-radius: $top  $right  $bottom  $left;
+    -o-border-radius: $top  $right  $bottom  $left;
+    border-radius: $top  $right  $bottom  $left;
+}
+@mixin border($width , $solid , $color){
+    -webkit-border: $width $solid $color;
+    -moz-border: $width $solid $color;
+    -o-border: $width $solid $color;
+    border: $width $solid $color;
+}
+
+// breakpoints
+@mixin tablet{
+    @media only screen and (max-width: 668px){
+        @content;
+    }
+}

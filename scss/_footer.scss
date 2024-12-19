@@ -1,0 +1,83 @@
+.sec-footer {
+    background-image: url(../images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+    padding: 60px 0;
+    
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .overlay {
+        background-color: #212d3bd0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    img {
+        max-width: 200px;
+    }
+
+    h3 {
+        padding: 60px 0;
+        color: $colorWhite;
+        font-weight: $textWeight + 200;
+        text-transform: capitalize;
+        font-size: $textSize * 2;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            list-style: none;
+
+            a {
+                color: $colorWhite;
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    h6 {
+        color: $colorWhite;
+        text-transform: $textTrans;
+    }
+
+    h4 {
+        color: $colorWhite;
+    }
+
+    .form-control {
+        width: 350px;
+        @include bd-radius(10px, 10px, 10px, 10px);
+        @media screen and (max-width: 768px){
+            width: 200px;
+        }
+    }
+    .social-icons {
+        span {
+            background-color: #212d3b9e;
+            padding: 10px;
+            @include bd-radius(10px, 10px, 10px, 10px);
+
+            i {
+                color: $colorWhite;
+                max-width: 20px;
+                max-height: 20px;
+            }
+        }
+    }
+}

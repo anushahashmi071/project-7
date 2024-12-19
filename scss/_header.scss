@@ -1,0 +1,31 @@
+.sec-header{
+    a{
+        transition: $textTransition;
+        font-weight: $textWeight + 200;
+        &:hover{
+            color: $secondaryColor;
+            text-decoration: 2px underline $secondaryColor;
+        }
+    }
+    .user-icon{
+        color: $colorWhite;
+        background-color: $secondaryColor;
+        height: 15px;
+        width: 15px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $secondaryColor;
+        transition: $textTransition;
+        @include bd-radius(30px ,30px , 30px , 30px);
+        &:hover{
+            color: $secondaryColor;
+            background-color: $colorWhite;
+            border: 1px solid $secondaryColor
+        }
+    }
+    .bag-icon{
+        @extend .user-icon;
+    }
+}
