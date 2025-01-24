@@ -2,9 +2,6 @@
     h1 {
         font-size: $textSize * 3;
     }
-}
-
-@include tablet {
     h2 {
         font-size: $textSize * 2;
 
@@ -12,9 +9,9 @@
             font-size: $textSize * 1.2;
         }
     }
-}
-
-@include tablet {
+    .sec-slider{
+        transform: translate(0,0);
+    }
     .sec-4-content {
         height: 500px;
 
@@ -30,9 +27,6 @@
             }
         }
     }
-}
-
-@include tablet {
     .sec-footer {
 
         h6 {
